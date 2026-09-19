@@ -1,0 +1,22 @@
+{
+  "name": "the-book-of-sake",
+  "version": "0.0.0.1",
+  "description": "A trilingual (English / 日本語 / 繁體中文) reference on Japanese sake. Static, no build step required to read it.",
+  "homepage": "https://13studio-sudo.github.io/sake/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/13studio-sudo/sake.git"
+  },
+  "author": "13STUDIO (https://13studio.co)",
+  "private": true,
+  "scripts": {
+    "build": "node tools/build.js",
+    "check": "node tools/check.js",
+    "layout": "node tools/layoutcheck.js",
+    "all": "node tools/build.js && node tools/check.js && node tools/layoutcheck.js"
+  },
+  "devDependencies": {
+    "jsdom": "^30.0.1",
+    "playwright": "^1.62.1"
+  }
+}
